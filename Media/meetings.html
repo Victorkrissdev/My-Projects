@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Media/GG_New_logo-removebg-preview.png" type="image/x-icon">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfOdUQqAAAAADr9JQBSka9oQsx2zOGhhDZ9HL_O"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <!-- Bootstrap CSS (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <section class="navbar-section">
+ <nav class="navbar navbar-expand-lg" style="background-color: #0d6efd;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logo.jpg" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="meetings.html">Meetings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+<section class="watchtower-intro">
+  <div class="watchtower-intro__inner container">
+    <h2 style="font-size: 50px;" class="watchtower-intro__title">Fellowship with Us</h2>
+    <p style="font-size: 20px;">
+  This is a ministry where we believe that consistent prayer and devotion strengthen our faith, 
+  deepen our understanding of God’s Word, and empower us to live with courage, wisdom, and purpose 
+  in every area of life.
+</p>
+
+    
+  </div>
+<style>
+  /* Intro block for Day & Night Watchtower (unique class names to avoid overrides) */
+.watchtower-intro {
+  padding: 36px 0;
+  background-color: #ffffff; /* change if you want a tinted background */
+}
+
+.watchtower-intro__inner {
+  max-width: 900px; /* constrain line length for readability */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.watchtower-intro__title {
+  font-size: 28px;
+  line-height: 1.15;
+  font-weight: 700;
+  color: #0b2540; /* dark, readable color */
+  margin-bottom: 12px;
+  text-align: left;
+}
+
+.watchtower-intro__text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #333;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 0.1px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .watchtower-intro__title {
+    font-size: 22px;
+  }
+  .watchtower-intro__text {
+    font-size: 15px;
+  }
+}
+</style>
+</section>
+
+
+  <style>
+/* Adjust logo size inside navbar */
+.navbar-logo {
+  height: 40px;         /* adjust as needed */
+  width: auto;          /* keeps proportions */
+  border-radius: 50%;   /* optional: smooth corners */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #fff !important;   /* bright green text */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #fff !important;       /* turns white on hover */
+}
+
+/* Optional: toggle icon color fix for blue background */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+</style>
+
+
+<style>
+  .prayer-banner {
+    height: 85vh;
+    background-image: url(aviv\ pray.avif);
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    position:relative;
+  }
+  .prayer-banner:before{
+    content:"";
+    position:absolute; inset:0;
+    background: rgba(0,0,0,0.35);
+  }
+  
+  .prayer-banner .inner{
+    position:relative; z-index:2; text-align:center;
+  }
+  .btn-hero{ background:#0d6efd; color:#fff; padding:10px 20px; border-radius:5px; text-decoration:none; transition:all 0.3s ease; }
+  .btn-hero:hover{ background:#082e65; color:#fff;  text-decoration: none; }
+</style>
+
+
+  <section class="prayer-banner">
+    <div class="inner">
+      <h2 style="white-space: normal; overflow: break-word ; text-align: left;"> “And He told spake a parable to this end that men ought always to pray and not faint" Luke 18:1</h2> 
+      <br>
+      
+      <a class="btn-hero" href="meetings.html">Learn About Prayer</a>
+
+    </div>
+  </section>
+
+<style>
+  .google-meet-section {
+  background: #f8f9fa;
+  padding: 60px 0;
+}
+
+.meet-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.meet-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+.meet-text p {
+  font-size: 20px;
+  margin: 15px 0;
+  
+}
+
+.btn-meet {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-meet:hover {
+  background-color: #617ca2;
+  text-decoration: none;
+  color: #fff;
+}
+
+.meet-image {
+  margin-right: 60px;
+  flex: 1;
+  text-align: right;
+  min-width: 20px;
+}
+
+.meet-image img {
+  size: 200px;
+  max-width: 300px;
+  height: auto;
+}
+</style>
+  <section class="google-meet-section">
+  <div class="container d-flex align-items-center justify-content-between flex-wrap">
+    
+    <!-- Left Text -->
+    <div class="meet-text">
+      <h2>Join Us on Google Meet</h2>
+      <p>Be part of our live prayer and study sessions from  anywhere in the world.</p>
+      <a href="#" class="btn-meet">Join Now</a>
+    </div>
+
+    <!-- Right Image -->
+    <div class="meet-image">
+      <img src="google_meet_card_1-removebg-preview.png" alt="Google Meet" class="img-fluid">
+    </div>
+
+  </div>
+</section>
+
+
+
+  </section>
+    
+    <section class="py-5" style="background-color: #1e1b1b;">
+  <div class="container">
+    <h2 class="mb-4" style="font-weight: 700; color: #000; font-size: 38px;">Weekly Watch Schedule</h2>
+    <p style="font-size: 18px;" class="watchtower-intro__text">
+        You are invited to fellowship with us <strong>online at the Day &amp; Night Watchtower</strong>, 
+  where you will be enriched through the study of God’s Word and empowered in prayer. 
+  Join us from anywhere as we seek guidance, encouragement, and inspiration through focused prayer 
+  sessions and Scripture study led by the unction of the Holy Spirit.
+    </p> <br> <br>
+
+    <div class="row g-4 justify-content-start">
+
+      <!-- Midnight Watch -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card schedule-card shadow-sm border-0">
+          <div class="card-body">
+            <h4  style="font-weight: 700; color: #fff;" class="card-title">MIDNIGHT WATCH</h4>
+            <p style="color: #fff;" class="card-text mb-2">Every day, Saturday – Sunday</p>
+            <p class="text-muted mb-3">⏰ 12:00 AM – 2:00 AM</p>
+            <a href="#" class="btn-signup-up">Join on Google Meet </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Midday Watch -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card schedule-card shadow-sm border-0">
+          <div class="card-body">
+            <h4 style="color: #fff; font-weight: 700;" class="card-title">MIDDAY WATCH</h4>
+            <p style="color: white;" class="card-text mb-2">Every day, Saturday – Friday</p>
+            <p class="text-muted mb-3">⏰ 3:00 PM – 4:00 PM</p>
+            <a href="#" class="btn-signup-up">Join on Google Meet </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Marathon Watch -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card schedule-card shadow-sm border-0">
+          <div class="card-body">
+            <h4 style="font-weight: 700; color: #fff;" class="card-title">MARATHON WATCH</h4>
+            <p style="color: #fff;" class="card-text mb-2">Every Saturday</p>
+            <p class="text-muted mb-3">⏰ 12:00 AM – 5:00 AM</p>
+            <a style="" href="#" class="btn-signup-up">Join on Google Meet </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fasting & Watch -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card schedule-card shadow-sm border-0">
+          <div style="background-image: url('card1\ blur.jpg'); background-size: cover;" class="card-body">
+            <h4 style="color: #fff; font-weight: 700;" class="card-title">FASTING AND BIBLE STUDY</h4>
+            <p style="color: #fff;" class="card-text mb-2">Mondays and Tuesdays</p>
+            <p style="color: #fff;" class="">⏰ 6:00 AM – 6:00 PM</p>
+            <a style="color: #fff;" href="#" class="btn-signup-up">Join on Google Meet </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+
+  .prayer-article-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+  color: #333;
+  line-height: 1.8;
+}
+
+.prayer-article-section .container {
+  max-width: 900px;
+}
+
+.article-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.article-author {
+  font-size: 1.4rem;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.article-content h3 {
+  font-size: 1.6rem;
+  margin-top: 30px;
+  color: #000000;
+}
+
+.article-content p {
+  margin-bottom: 20px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.article-content ul {
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+.article-content ul li {
+  font-size: 17px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+</style>
+
+<section class="prayer-article-section">
+  <div class="container">
+
+    <h2 class="article-title">The Importance of Prayer in Our Daily Lives and How It Can Benefit Us in Many Ways</h2>
+    <p class="article-author">By <strong>Pastor Joseph Onuoma </strong></p>
+
+    <div class="article-content">
+      <p>When we pray, it is not so that we can get what we want from God. Rather, prayer is a way to connect with Him and realign our hearts with His.</p>
+
+      <p>Prayer is one of the most important aspects of our lives as followers of Jesus, and it should not be taken lightly. In this article, we will discuss the importance of prayer and how it can benefit us in many ways!</p>
+
+      <p>Prayer is not something we should only do at church or during Bible study. It’s something we can do every single day. Like any relationship, if you don’t spend time with that person the relationship will suffer. Prayer is a way for us to spend time with God. It is a way to connect with Him and align our hearts with His.</p>
+
+      <p>When we pray, we are inviting God into our lives and asking for His guidance. Prayer is important because it helps us to stay close to God and grow in our relationship with Him. The Bible says in <strong>James 4:8</strong>, “Draw near to God and He will draw near to you.”</p>
+
+      <h3>The Importance of Prayer</h3>
+      <p>Prayer positions us to receive God’s peace that surpasses all understanding. In life’s hardest moments (and even in the good times), prayer helps us stay focused on what’s close to God’s heart. As <strong>Philippians 4:6–7</strong> reminds us, when we pray with thanksgiving, God’s peace guards our hearts and minds through Christ Jesus.</p>
+
+      <h3>Ways Prayer Can Benefit Us</h3>
+      <ul>
+        <li>Prayer helps us focus on what is important.</li>
+        <li>Prayer keeps us hopeful in dark times.</li>
+        <li>Prayer deepens our connection with God.</li>
+        <li>Prayer brings comfort, peace, and clarity.</li>
+        <li>Prayer strengthens our relationship with the Lord.</li>
+        <li>Prayer gives us compassion, wisdom, and courage.</li>
+        <li>Prayer helps us grow spiritually strong and mature.</li>
+      </ul>
+
+      <h3>How Important Was Prayer to Jesus</h3>
+      <p>For Jesus, prayer wasn’t a mere ritual—it was an expression of His relationship with the Father. He often withdrew to pray, showing us that prayer is a vital part of spiritual life and ministry.</p>
+
+      <p>Prayer gave Jesus strength, courage, and clarity. When we follow His example, we find the same power to face challenges and walk in the Father’s will. As <strong>Ephesians 3:20</strong> reminds us, God “is able to do exceedingly abundantly above all that we ask or think, according to the power that works in us.”</p>
+
+      <h3>Short Scriptures About Prayer</h3>
+      <p><strong>Philippians 4:6–7:</strong> “Do not be anxious about anything, but in every situation, by prayer and petition, with thanksgiving, present your requests to God...”</p>
+      <p><strong>1 Thessalonians 5:16–18:</strong> “Rejoice always, pray continually, give thanks in all circumstances...”</p>
+      <p><strong>James 5:16:</strong> “The prayer of a righteous person is powerful and effective.”</p>
+
+      <h3>Prayer for Today</h3>
+      <p><em>Lord, teach us to pray today! Teach us how to commune with You in prayer and help us spend more time with You today than yesterday. Thank You, Lord! Amen.</em></p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+   
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+    <style>
+      .footer {
+  padding: 40px 20px;
+  background-color: #123563;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  gap: 130px; /* Space between columns */
+  flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+/* Footer Column */
+.footer-column {
+  flex: 1;
+  max-width: 300px; /* Max width for each column */
+  text-align: left;
+}
+
+/* Header Style */
+.footer-heading {
+  font-size: 20px;
+  color: #0a5ba6;
+  margin-bottom: 15px;
+}
+
+/* List Style */
+.footer-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer-list li {
+  font-size: 15.8px;
+  color: #fffc;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.footer-text {
+  line-height: 25px;
+  font-size: 18px;
+  color: #fffc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #ddd; /* Placeholder for icon styling */
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Footer Button */
+.footer-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fffc;
+  background-color: #0a5ba6;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-button:hover {
+  background-color: transparent;
+  color: #ffc600;
+}
+
+
+/* Blue Section */
+.blue-section {
+  background-color: #0b2648; /* Blue background */
+  height: 40vh; /* 20% of viewport height */
+  display: flex;
+  flex-direction: column; /* Stack paragraphs vertically */
+  justify-content: center; /* Center content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 20px 20px 20px 100px; /* Padding with 100px on the left */
+  color: #fffc; /* White text color */
+  margin: 0; /* Remove margin to avoid the white border */
+  box-sizing: border-box; 
+  font-family: var(gotham, sans-serif);
+}
+
+.blue-section p {
+  margin: 10px 0; /* Space between paragraphs */
+  font-size: 16px; /* Adjust font size as needed */
+  max-width: 100%; /* Ensure paragraph wrapping correctly */
+}
+
+
+
+
+/* REGISTRATION /* REGISTRATION *//* REGISTRATION ************/
+
+
+/* Admission Section */
+.admission-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  box-sizing: border-box;
+}
+
+/* Headings and Links */
+.admission-heading {
+  font-size: 50px;
+  color: rgb(50, 49, 49);
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+
+.admission-link {
+  margin-top: -10px;
+  margin-left: 150px;
+}
+
+.admission-link a {
+  font-size: 14px;
+  color: rgb(90, 88, 88);
+  text-decoration: none;
+}
+
+.admission-link a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+    </style>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <!-- First Column: Information For -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Information for</h3>
+      <ul class="footer-list">
+        <li>Prospective Students</li>
+        <li>Current Students</li>
+        <li>Alumni</li>
+        <li>Parents & Families</li>
+        <li>Faculty & Staff</li>
+        <li>Churches</li>
+        <li>Military</li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-middle">
+  <h3 style="font-size: 30px; color: #fffc; margin-left: 20px;" class="footer-heading">Contact</h3>
+  <div class="footer-text">
+    <p>3900 Bethel Drive<br>St. Paul, MN 55112<br> <i class="bi bi-geo-alt-fill"></i> Maps & Directions</p>
+    <p>651.638.6400</p>
+  </div>
+  <div class="social-icons">
+    <!-- Social Media Icons -->
+    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+    <!-- Add more social icons as needed -->
+  </div>
+</div>
+
+
+    <!-- Last Column: Resources -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Resources</h3>
+      <ul class="footer-list">
+        <li>Jobs at Bethel</li>
+        <li>Calendar</li>
+        <li>Library</li>
+        <li>Questions & Comments</li>
+        <li>Title IX Concerns</li>
+        <li>Course Catalogs</li>
+      </ul>
+      <a style="margin-top: 1px;" href="#" class="footer-button">Support Us</a>
+    </div>
+  </div>
+</footer>
+
+
+<section class="blue-section">
+  <p>© 2024 Bethel University | CA Student Disclosures | Privacy Policy</p>
+  <p>The official policy and commitment of Bethel University is not to discriminate on the basis of race, color, national or ethnic origin, age, gender, or disability in  <br>its educational programs, admissions, or employment practices.</p>
+</section>
+
+
+
+
+
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> <!-- custom CSS last -->
+
+
+</body>
+</html>
+

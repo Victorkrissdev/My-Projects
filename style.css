@@ -1,10 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
 .navbar-custom {
-    background-color: #0f8cae; /* Light blue background */
+    background-color: #0a5ba6;
 }
 
 .navbar-brand img {
     height: 40px;
-}
+} 
 
 .navbar-nav .nav-item .nav-link {
     color: #f3ecec;
@@ -14,37 +24,79 @@
     color: #000;
 }
 
-.navbar-nav .nav-item .social-icon {
-    margin-left: 10px;
-    color: #f3ecec;
+
+/* Custom styles for the sign up button */
+.btn-signup-up {
+    height: 40px;
+    width: 340px;
+    background-color: #0a5ba6; /* Button background color */
+    color: #ded9d9; /* Text color */
+    border: 1px solid #ded9d9;
+    font-size: 14px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-.navbar-nav .nav-item .social-icon:hover {
-    color: #000;
+
+
+.btn-signup-up:hover {
+    background-color: white; /* Blue background on hover */
+    color: black; /* White text on hover */
 }
 
-.form-inline .form-control {
-    width: 600px;
-}
 
-.form-inline .btn {
-    margin-left: 10px;
-}
 
 /* Custom toggle button color */
 .custom-toggler .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;charset=utf8,%3csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"%3e%3cpath stroke="%23f3ecec" stroke-width="2" d="M5 7h20M5 15h20M5 23h20"/%3e%3c/svg%3e');
+    background-color: transparent !important;
+    border: none !important;
+}
+.breaking-news {
+    display: flex;
+    align-items: stretch;
+    height: 60px; /* Adjust the height as needed */
+    background-color: black; /* Optional background color */
+}
+
+.news-label {
+    width: 200px;
+    background-color: #f5980d; /* Optional background color */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.news-marquee {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+marquee {
+    font-size: 20px;
+    width: 100%;
+    color: white;
 }
 
 
 .custom-toggler:hover {
-    background-color: #0d6efd;
+    background-color: transparent !important;
+    text-decoration: none !important;
 }
 
-/* style.css */
 .hero-section {
     height: 80vh;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/back\ real.jpg') no-repeat center center;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Media/back\ real.jpg') no-repeat center center;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -60,18 +112,17 @@
 }
 
 .hero-content h1 {
-    font-size: 2.5rem;
+    font-weight: bolder;
+    font-size: 5rem;
     margin-bottom: 10px;
 }
 
 .hero-content p {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
-
-/* style.css */
 .text-image-section {
-    height: 50vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -80,15 +131,12 @@
 }
 
 .text-content {
-    margin-top: 20px;
     flex: 1;
     max-width: 50%;
     padding-right: 20px;
 }
 
 .text-content h2 {
-
-    margin-top: 20px;
     font-size: 2.5rem;
     margin-bottom: 15px;
 }
@@ -104,17 +152,17 @@
 }
 
 .image-content img {
-    width: 700px;
-    height: 40vh;
+    width: 90%;
+    height: 450px;
+    height: cover;
     border-radius: 10px;
-    object-fit: cover; 
+    
 }
 
-
 .new-section {
-   
-    height: 40vh;
+    height: auto; /* Allow the height to adjust based on content */
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -122,53 +170,2497 @@
     padding: 20px;
 }
 
-.content {
-    position: absolute;
-    text-align: center;
-    z-index: 1;
-    color: #333; /* Text color */
+
+.video-text-section {
+    width: 100%;
+    background-color: brown;
+    color: white;
+    padding: 20px; /* Add padding for better spacing */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
-.content h1 {
-    font-size: 3rem;
+/* Responsive Iframe */
+.video-text-section iframe {
+    width: 100%;
+    height: 60vh; /* Adjust height for better responsiveness */
+    border: none;
+    border-radius: 5px;
+    max-width: 100%; /* Ensure iframe does not overflow */
+}
+
+/* Responsive Text Section */
+.video-text-section .text-content {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Adjust margins for different screen sizes */
+.video-text-section h1 {
+    font-size: 1.75rem; /* Adjust font size for better readability */
     margin-bottom: 10px;
 }
 
-.content p {
-    font-size: 1.125rem;
-    margin-bottom: 0;
-    line-height: 1.6;
+.video-text-section p {
+    font-size: 1rem; 
 }
 
-.images {
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .video-text-section h1 {
+        font-size: 1.5rem; /* Adjust font size for medium screens */
+        margin-bottom: 8px;
+    }
+
+    .video-text-section p {
+        font-size: 0.9rem; /* Adjust font size for medium screens */
+    }
+
+    .video-text-section iframe {
+        height: 50vh; /* Adjust iframe height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .video-text-section {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .video-text-section h1 {
+        font-size: 1.25rem; /* Adjust font size for smaller screens */
+        margin-bottom: 6px;
+    }
+
+    .video-text-section p {
+        font-size: 0.85rem; /* Adjust font size for smaller screens */
+    }
+
+    .video-text-section iframe {
+        height: 40vh; /* Adjust iframe height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-text-section h1 {
+        font-size: 1rem; /* Adjust font size for very small screens */
+        margin-bottom: 5px;
+    }
+
+    .video-text-section p {
+        font-size: 0.75rem; /* Adjust font size for very small screens */
+    }
+
+    .video-text-section iframe {
+        height: 30vh; /* Adjust iframe height for very small screens */
+    }
+}
+
+
+/* Styling for the content section */
+.content-section h1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    color: dimgray;
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 100%; /* Allow paragraphs to take full width */
+}
+
+
+.img-1, .img-2 {
+    width: 100%; /* Let the images resize responsively */
+    max-width: 300px; /* Set a max width for better layout control */
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto; /* Center the images */
+}
+
+
+/* General Section Styling */
+.request-section {
+    padding: 50px 0;
+    background-color: #eaeaeb;
+}
+
+/* Container Styling */
+.request-container {
     display: flex;
+    flex-wrap: wrap; /* Ensure it wraps on smaller screens */
     justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    gap: 20px;
+}
+
+/* Contact Information Styling */
+.container-contact {
+    flex: 1;
+    max-width: 45%;
+    margin-top: 80px;
+    margin-left: 60px;
+    text-align: left;
+}
+
+.container-contact h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #504d4d;
+}
+
+.container-contact h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: #2266af;
+}
+
+.container-contact p {
+    font-size: 20px;
+    color: #504d4d;
+}
+
+/* Request Form Styling */
+.request-info {
+    flex: 1;
+    max-width: 45%;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #000;
+}
+
+/* Ensure inputs and textareas are fully responsive */
+.request-info input,
+.request-info textarea {
     width: 100%;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    margin-bottom: 15px;
 }
 
-.left-image,
-.right-image {
-    height: 100px; /* Adjust height as needed */
+.request-info h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+/* Change input background color on focus */
+.form-control:focus {
+    background-color: #f0f8ff;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Privacy Terms Styling */
+.privacy-terms {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.privacy-terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.privacy-terms a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styling */
+button[type="submit"] {
+    width: 100%; 
+    padding: 10px;
+    font-size: 18px;
+}
+
+.ceo-section {
+    width: 100%;
+    height: auto; /* Dynamic height based on content */
+    background-color: #ffffff;
+    padding: 2rem 1rem; /* Adjusted padding for better responsiveness */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.ceo-section h4 {
+    font-size: 1.25rem; /* Use rem for better scalability */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #0f67d2;
+    margin-bottom: 0.5rem;
+}
+
+.ceo-section p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #534e4e;
+    font-size: 1.25rem; /* Use rem for better scalability */
+}
+
+.ceo-section h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #504d4d;
+    font-size: 1.875rem; /* Use rem for better scalability */
+}
+
+.ceo-section .btn-primary-b {
+    color: #fff;
+    background-color: #222222;
+    border-color: #1e5897;
+}
+
+.ceo-section .btn-primary-b:hover {
+    background-color: #052b53;
+    border-color: #052b53;
+}
+
+.ceo-section img {
+    max-width: 100%; /* Ensure image scales with the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 1.25rem; /* Add spacing below the image */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 1024px) {
+    .ceo-section {
+        padding: 2rem 1rem; /* Adjust padding for medium screens */
+    }
+    
+    .ceo-section img {
+        width: 100%; /* Full width on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .ceo-section {
+        padding: 1.5rem 0.5rem; /* Adjust padding for smaller screens */
+    }
+    
+    .ceo-section h3 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .ceo-section h4 {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .ceo-section p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+}
+
+.program-highlights {
+    width: 100%;
+    height: auto; /* Allow dynamic height */
+    background-color: mintcream;
+    padding: 0 20px; /* Added padding on left and right */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Styling for highlight items */
+.highlight-item {
+    background-color: transparent !important;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Styling for highlight titles and underlines */
+.highlight-title {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 2rem; /* Adjusted to rem for responsiveness */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+}
+
+.highlight-title::after {
+    content: "";
+    display: block;
+    width: 50px; /* Adjusted width for the underline */
+    height: 3px;
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Paragraph styling */
+.highlight-item p {
+    margin-left: 0; /* Reset margin */
+    width: 100%; /* Full width for responsiveness */
+    font-size: 1.25rem; /* Adjusted to rem for responsiveness */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* Header Box Styling */
+.highlight-header {
+    position: relative;
+    background-color: rgb(128, 90, 20);
+    padding: 15px;
+    margin-bottom: 20px; /* Space below the header */
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: white;
+    font-size: 2.5rem; /* Adjusted to rem for responsiveness */
+    font-family: 'Trebuchet MS', sans-serif;
+    overflow: hidden; /* Hide overflow for animation */
+    animation: fadeIn 1s ease-in-out; /* Fade-in animation */
+    box-sizing: border-box; /* Include padding in the width */
+}
+
+/* Text Inside Header Box */
+.highlight-header h2 {
+    margin: 0;
+    position: relative;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .highlight-title {
+        font-size: 1.75rem; /* Adjust font size for medium screens */
+    }
+
+    .highlight-item p {
+        font-size: 1.1rem; /* Adjust font size for medium screens */
+    }
+
+    .highlight-header {
+        font-size: 2rem; /* Adjust font size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .highlight-title {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .highlight-item p {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .highlight-header {
+        font-size: 1.75rem; /* Adjust font size for smaller screens */
+    }
+
+    .program-highlights {
+        padding: 0 10px; /* Reduce padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .highlight-title {
+        font-size: 1.25rem; /* Adjust font size for very small screens */
+    }
+
+    .highlight-item p {
+        font-size: 0.9rem; /* Adjust font size for very small screens */
+    }
+
+    .highlight-header {
+        font-size: 1.5rem; /* Adjust font size for very small screens */
+    }
+}
+
+.card {
+    border: none; /* Remove the default card border */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    border-radius: 8px; /* Rounded corners for the card */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.card-footer {
+    border-top: none; /* Remove the border from the footer */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Bootstrap primary color */
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-transform: uppercase;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+
+
+.custom-card {
+    float: right;
+    max-width: 100%;               /* Ensures the card adjusts to screen size */
+    margin: 0 auto; 
+    width: 700px;               /* Centers the card */
+    height: 40vh;                  /* Adjust the height dynamically */
+    border: 1px solid #1170d5;
+    background-color: #f8f9fa;
+    padding: 10px;                 /* Adds padding around the card content */
+    box-sizing: border-box;        /* Ensures padding and border don't affect width */
+}
+
+.custom-card h2 {
+    background-color: #e4edf6;
+    font-size: 1.30rem;
+    color: black;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+}
+
+.custom-card .content {
+    padding: 15px;
+}
+
+.custom-card .row div {
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 2rem;
+}
+
+.custom-card .row .col-6.text-left {
+    color: #333;
+    font-weight: bolder;
+}
+
+.custom-card .row .col-6.text-right {
+    font-weight: 500;
+}
+
+.learn {
+    margin-top: 30px;
+}
+
+.learn a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.learn a:hover {
+    background-color: #e2d6a8;
+}
+
+
+.event-section {
+  min-height: 90vh; /* Ensure the section always covers at least 90% of the viewport height */
+  background-color: #f8f9fa;
+  margin-top: 200px;
+  padding: 10px;
+  width: 100%; /* Ensure the section takes up the full viewport width */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+.event-card {
+  display: flex;
+  justify-content: center;          /* Center the cards horizontally */
+  gap: 50px;                        /* Space between the cards */
+  align-items: flex-start;
+  max-width: 1200px;                /* Set a maximum width for the card container */
+  margin: 0 auto;                   /* Center the container itself */
+  flex-wrap: wrap;                  /* Allow wrapping for responsiveness */
+}
+
+.event-block {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 45%;                       /* Set width for each card */
+}
+
+.event-block h3 {
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: bolder;
+  color: #3d3c3c;
+}
+
+.event-block p {
+  font-size: 18px;
+  color: #3d3c3c;
+}
+
+.event-img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.event-content {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.event-content a {
+  margin-top: 10px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 17px;
+  height: 50px;
+  background-color: #195594;
+  border-radius: 5px;
+  text-transform: none;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+button:hover,
+.btn:hover {
+
+  background-color: #174a82;
+  text-decoration: underline;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: white; /* ensures Bootstrap doesn't override the text color */
+}
+.btn-capitalize {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  height: 50px;
+  background-color: #2a6db4;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: none;
+  color: white;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-capitalize:hover {
+  background-color: #052b53;
+}
+
+.btn-capitalize .btn-icon {
+  margin-right: -10px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.btn-capitalize .btn-icon i {
+  font-size: 20px;
+}
+
+.btn-capitalize::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #0056b3; /* Color for the right end */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-capitalize .btn-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  background-color: transparent !important;
+  transform: translateY(-50%);
+  color: white;
+}
+
+
+
+.transform-section {
+    margin-top: 130px;
+  width: 100%;
+  background-color: #fff;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.transform-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.image-content {
+  flex: 1;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns the heading to the top */
+}
+
+.image-content h3 {
+    font-weight: bolder;
+    text-wrap: nowrap;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  align-self: flex-start; /* Ensures it aligns with the top */
+  margin-top: 0; /* Remove extra margin from the top if any */
+}
+
+.image-content img {
+  width: 100%;
+  height: 350px;
+  border-radius: 0px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 50%;
+}
+
+.text-content p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 40px;
+  font-size: 1.25rem;
+  color: #534e4e;
+}
+
+.history-section {
+    margin-top: 130px;
+    width: 100%;
+    background-color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+
+.history-card {
+    display: flex;
+    flex-direction: row; /* Stack the cards horizontally */
+    gap: 40px; /* Space between the cards */
+    align-items: center; /* Center the cards vertically */
+    flex-wrap: wrap; /* Allow wrapping of cards */
+    justify-content: center; /* Center the cards horizontally */
+}
+
+.history-card .card1, .history-card .card2 {
+    width: 600px;
+    margin-top: 50px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px;
     border-radius: 10px;
+    border: 1px solid #346eb1;
+    box-sizing: border-box; /* Ensure padding and border are included in the element’s total width and height */
 }
 
-.left-image {
-    position: absolute;
-    left: 20px; /* Adjust positioning as needed */
+
+
+
+.quote-section {
+    gap: 10px;
+  margin-top: 80px;
+  background-color: #fff; /* Light background color */
+  padding: 20px 20px; /* Padding around the section */
+}
+
+.rounded-circle {
+    margin-right: -100px;
+  width: 150px; /* Width of the image */
+  height: 150px; /* Height of the image */
+  object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.blockquote {
+  font-size: 1.10rem; /* Font size for the quote */
+  color: #333; /* Dark color for the text */
+}
+
+.blockquote-footer {
+  font-size: 1rem; /* Font size for the footer */
+  color: #555; /* Slightly lighter color for the footer text */
+}
+
+
+.info-section {
+  margin-top: 130px;
+  padding: 20px;
+  background-color: #dcecec; /* Light gray background color */
+}
+
+.container-info {
+  max-width: 800px; /* Maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.header {
+  margin-top: 100px;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #0a5ba6; /* Blue color for the header */
+}
+
+.paragraph {
+  font-size: 1.2rem;
+  color: #333; /* Dark gray color for the text */
+  margin-bottom: 15px;
+}
+
+.additional-content {
+  display: flex;
+  justify-content: space-between; /* Spread the sections */
+  gap: 100px; /* Adjust the gap between sections */
+  margin-top: 50px; /* Margin top for additional content */
+}
+
+.subheader {
+  font-size: 1.5rem;
+  color: #0056b3; /* Slightly darker blue color */
+  margin-bottom: 10px;
+}
+
+.short-text {
+  font-size: 1rem;
+  color: #333; /* Dark gray color for the text */
+  margin-bottom: 15px;
+}
+
+.skills-section,
+.career-section {
+  flex: 1; /* Ensure equal spacing between sections */
+  max-width: 45%; /* Set maximum width for each section */
+}
+
+.list-items-1,
+.list-items-2 {
+  list-style-type: disc; /* Bulleted list */
+  padding-left: 20px; /* Indentation for list items */
+}
+
+.list-items-1 li,
+.list-items-2 li {
+  font-size: 1rem;
+  color: #333; /* Dark gray color for the text */
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    font-size: 1.5rem; /* Reduce header size */
+  }
+
+  .paragraph {
+    font-size: 1rem; /* Reduce paragraph font size */
+    line-height: 1.4; /* Adjust line height for readability */
+  }
+
+  .additional-content {
+    flex-direction: column; /* Stack the sections vertically */
+    gap: 30px; /* Reduce gap between sections */
+  }
+
+  .skills-section,
+  .career-section {
+    max-width: 100%; /* Full width for smaller screens */
+  }
+
+  .subheader {
+    font-size: 1.3rem; /* Adjust subheader size */
+  }
+
+  .list-items-1 li,
+  .list-items-2 li {
+    font-size: 0.9rem; /* Reduce font size for list items */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-info {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  .header {
+    font-size: 1.2rem; /* Further reduce header size */
+  }
+
+  .paragraph {
+    font-size: 0.9rem; /* Further reduce paragraph font size */
+    line-height: 1.4; /* Keep a comfortable line height */
+  }
+
+  .additional-content {
+    gap: 20px; /* Reduce gap further */
+  }
+
+  .subheader {
+    font-size: 1.1rem; /* Adjust subheader size */
+  }
+
+  .list-items-1 li,
+  .list-items-2 li {
+    font-size: 0.85rem; /* Further reduce font size */
+  }
+}
+
+
+/* General Section Styles */
+.background-section {
+  background-image: url('Media/kresge2.avif');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 105vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden; /* Ensure no overflow happens on smaller screens */
+}
+
+/* Overlay to darken background */
+.overlay {
+  width: 100%;
+  height: 100%; /* Ensure overlay covers the entire section */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 50px; /* Padding of 50px on both sides */
+}
+
+/* Text Container */
+.text-container {
+  margin-top: -25%; /* Adjust margin to avoid overlapping on smaller screens */
+  color: #fff;
+  text-align: left;
+  max-width: 600px;
+  width: 100%;
+}
+
+.text-h4, .text-h3, .text-p {
+  margin-left: 0;
+}
+
+.text-h4 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text-h3 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.text-p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Button Styles */
+.btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid ;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-primary, .btn-secondary {
+  background-color: #084280;
+  color: #fff;
+}
+
+.btn-primary .btn-text, .btn-secondary .btn-text {
+  z-index: 1;
+}
+
+.btn-primary .btn-icon, .btn-secondary .btn-icon {
+  position: relative;
+  z-index: 2;
+  margin-left: 10px;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Existing button styles */
+.btn-primary:hover, .btn-secondary:hover {
+  background-color: #0056b3; /* The blue color on hover for both buttons */
+}
+
+.btn-primary::after,
+.btn-secondary::after {
+  background-color: #0056b3; /* Ensure the right-end background section is the same on hover */
+}
+
+/* Icon background section for both buttons */
+.btn-primary::after,
+.btn-secondary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 100%;
+  background-color: #0056b3;
+  z-index: 0;
+}
+
+.btn-secondary::after {
+  background-color: #084280;
+}
+
+/* Section Styles */
+.related-programs-section {
+    margin-top: 0px;
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.section-title {
+  margin-top: 50px;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #3d3c3c;
+}
+
+/* Programs Container */
+.programs-container {
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  flex-wrap: wrap; /* Ensure cards wrap on smaller screens */
+}
+
+/* Card Styles */
+.program-card {
+  flex-wrap: nowrap;
+  background-color: #fff;
+  border: 1px solid #939090;
+  padding: 20px;
+  height: 240px;
+  width: 320px;
+  text-align: left; 
+  border-top: #0b5dae 6px solid;
+}
+
+.program-title {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #3d3c3c;
+  display: inline-block; /* So the hover effect affects only the text */
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.program-card h3:hover {
+  background-color: yellow;
+  outline: 2px solid yellow;
+}
+
+.program-description {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+
+/* Button Styles */
+.btn-learn-more {
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+  background-color: #F9C70C;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 150px; /* Set a max-width to prevent the button from stretching too wide */
+  width: 100%; /* Allow the button to adapt to the width of its container */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-learn-more:hover {
+  background-color: #dcae09;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .programs-container {
+    flex-direction: column; /* Stack the cards vertically on smaller screens */
+    gap: 30px; /* Reduce gap between the cards */
+  }
+
+  .btn-learn-more {
+    max-width: 200px; /* Allow a wider button on tablet-sized screens */
+    margin: 0 auto; /* Center the button */
+  }
+}
+
+@media (max-width: 480px) {
+  .program-card {
+    width: 100%; /* Make the card take up the full width of the screen */
+    height: auto; /* Let the height adjust based on the content */
+    padding: 20px;
+  }
+
+  .btn-learn-more {
+    max-width: 180px; /* Set a smaller max-width for the button on mobile */
+    margin-left: 20px; /* Add some margin to the left for alignment */
+    width: auto; /* Ensure the button doesn’t stretch beyond its content */
+  }
+}
+
+
+/* Comment Section Styles */
+.comment-section {
+  padding: 30px;
+  text-align: left;
+}
+
+.comment-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Enable wrapping on smaller screens */
+}
+
+/* Director's Image Styles */
+.comment-image img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Comment Content */
+.comment-content {
+  flex-grow: 1;
+}
+
+.director-name {
+  font-size: 20px;
+  color: #084280;
+  margin: 0;
+  font-weight: bold;
+}
+
+.director-job {
+  font-size: 16px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.director-comment {
+  font-size: 16px;
+  color: #333;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+
+/* Accreditation Section */
+.accreditation-section {
+  height: 61vh;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.section-header {
+  margin-top: 70px;
+  font-size: 28px;
+  color: #0a5ba6;
+  font-weight: 500;
+  margin-bottom: 30px;
+  display: inline-block; /* Adjust width to fit content */
+  position: relative; /* Position for the pseudo-element */
+  padding-bottom: 10px; /* Space for the line */
+}
+
+/* Line under header */
+.section-header::after {
+  content: '';
+  display: block;
+  width: 100%; /* Full width of the text */
+  height: 1px; /* Thickness of the line */
+  background-color: #000; /* Black line */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+/* Accreditation Section */
+.accreditation-section {
+  margin-bottom: 0px;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 85vh; /* Ensure the section takes up at least the full viewport height */
+}
+
+/* Header Styles */
+.section-header {
+  font-size: 40px;
+  color: rgb(94, 94, 94);
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 500;
+  margin: 70px 0 30px;
+  display: inline-block;
+  position: relative;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+/* Line under header */
+.section-header::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+
+/* Accreditation Section */
+.accreditation-section {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-header {
+  color: rgb(94, 94, 94);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Accreditation Container - 2 Column Layout */
+/* Accreditation Section */
+.accreditation-section {
+  padding: 40px 20px;
+  box-sizing: border-box;
+  background-color: #f9f9f9; /* Optional background color */
+  position: relative;
+  overflow: hidden; /* Prevent overflow */
+  min-height: 100vh; /* Ensure the section takes full view height */
+}
+
+.section-header {
+  color: rgb(94, 94, 94);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* Accreditation Container - 2 Column Layout */
+.accreditation-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+  max-width: 1200px; /* Prevent the container from stretching too wide */
+}
+
+.accreditation-item {
+  flex: 1 1 300px; /* Flex-grow, flex-shrink, flex-basis */
+  max-width: 500px;
+  min-width: 300px;
+  text-align: left;
+  box-sizing: border-box;
+  margin-bottom: 30px; /* Add spacing between rows on small screens */
+}
+
+/* Title Styles */
+.accreditation-title {
+  font-size: 30px;
+  color: #0b5dae;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Description Styles */
+.accreditation-description {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Link Styles */
+.accreditation-link {
+  color: #0b5dae;
+  text-decoration: none;
+}
+
+.accreditation-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .accreditation-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .accreditation-item {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .accreditation-description {
+    font-size: 18px; /* Slightly smaller font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .section-header {
+    font-size: 30px;
+  }
+
+  .accreditation-title {
+    font-size: 24px;
+  }
+
+  .accreditation-description {
+    font-size: 16px;
+  }
+}
+
+
+/* Footer Section */
+.footer {
+  padding: 40px 20px;
+  background-color: #123563;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  gap: 130px; /* Space between columns */
+  flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+/* Footer Column */
+.footer-column {
+  flex: 1;
+  max-width: 300px; /* Max width for each column */
+  text-align: left;
+}
+
+/* Header Style */
+.footer-heading {
+  font-size: 20px;
+  color: #0a5ba6;
+  margin-bottom: 15px;
+}
+
+/* List Style */
+.footer-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer-list li {
+  font-size: 15.8px;
+  color: #fffc;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.footer-text {
+  line-height: 25px;
+  font-size: 18px;
+  color: #fffc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #ddd; /* Placeholder for icon styling */
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Footer Button */
+.footer-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fffc;
+  background-color: #0a5ba6;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-button:hover {
+  background-color: transparent;
+  color: #ffc600;
+}
+
+
+/* Blue Section */
+.blue-section {
+  background-color: #0b2648; /* Blue background */
+  height: 40vh; /* 20% of viewport height */
+  display: flex;
+  flex-direction: column; /* Stack paragraphs vertically */
+  justify-content: center; /* Center content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 20px 20px 20px 100px; /* Padding with 100px on the left */
+  color: #fffc; /* White text color */
+  margin: 0; /* Remove margin to avoid the white border */
+  box-sizing: border-box; 
+  font-family: var(gotham, sans-serif);
+}
+
+.blue-section p {
+  margin: 10px 0; /* Space between paragraphs */
+  font-size: 16px; /* Adjust font size as needed */
+  max-width: 100%; /* Ensure paragraph wrapping correctly */
+}
+
+
+
+
+/* REGISTRATION /* REGISTRATION *//* REGISTRATION ************/
+
+
+/* Admission Section */
+.admission-section {
+  background-color: #f4f4f4;
+  padding: 20px;
+  min-height: 100vh; /* Ensure the section takes at least the full viewport height */
+  box-sizing: border-box;
+}
+
+/* Headings and Links */
+.admission-heading {
+  font-size: 50px;
+  color: rgb(50, 49, 49);
+  margin-bottom: 10px;
+  margin-left: 150px;
+}
+
+.admission-link {
+  margin-top: -10px;
+  margin-left: 150px;
+}
+
+.admission-link a {
+  font-size: 14px;
+  color: rgb(90, 88, 88);
+  text-decoration: none;
+}
+
+.admission-link a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Registration Form */
+.registration-form {
+  margin-top: 50px;
+  max-width: 500px;
+  margin-left: 150px;
+  padding-bottom: 40px; /* Add padding to avoid footer overlap */
+}
+
+.form-intro h4 {
+  font-size: 45px;
+}
+
+.form-intro p {
+  font-size: 25px;
+  margin-top: 30px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.form-group input {
+  background-color: transparent;
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 16px;
+}
+
+/* Recaptcha */
+.g-recaptcha {
+  margin-top: 20px;
+}
+
+/* Buttons */
+.form-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically on smaller screens */
+  gap: 10px;
+}
+
+.register-button,
+.login-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #0a5ba6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.register-button:hover,
+.login-button:hover {
+  background-color: #0b2648;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .admission-heading,
+  .admission-link,
+  .registration-form {
+    margin-left: 20px; /* Reduce margin on smaller screens */
+  }
+
+  .admission-heading {
+    font-size: 40px;
+  }
+
+  .form-intro h4 {
+    font-size: 30px;
+  }
+
+  .form-intro p {
+    font-size: 20px;
+  }
+
+  .register-button,
+  .login-button {
+    max-width: 150px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admission-heading,
+  .admission-link,
+  .registration-form {
+    margin-left: 10px; /* Further reduce margin on very small screens */
+  }
+
+  .admission-heading {
+    font-size: 30px;
+  }
+
+  .form-intro h4 {
+    font-size: 24px;
+  }
+
+  .form-intro p {
+    font-size: 18px;
+  }
+
+  .register-button,
+  .login-button {
+    font-size: 12px;
+  }
+}
+
+/* Adjusting Buttons for Consistent Height */
+.register-button,
+.login-button {
+  padding: 12px 17px; /* Uniform padding */
+  font-size: 16px;
+  color: #fff;
+  background-color: #0a5ba6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  max-width: 210px; /* Set max-width to both buttons */
+  text-align: center;
+  height: 47px; /* Consistent height for both buttons */
+}
+
+.register-button:hover,
+.login-button:hover {
+  background-color: #0b2648;
+}
+
+/* Ensure both buttons have the same height on mobile */
+@media (max-width: 768px) {
+  .register-button,
+  .login-button {
+    max-width: 150px; /* Reduce width on mobile */
+    font-size: 14px;
+    height: 47px; /* Consistent height for both buttons */
+  }
+}
+
+
+/* UNDERGRAD NAVBAR */
+
+.undergrad-navbar {
+  border-bottom: #a8a6a6 1px solid;
+  height: 13vh;
+  background-color: #f5f5f5;
+  padding: 15px;
+  color: rgb(77, 76, 76);
+  font-weight: bolder;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styling */
+.navbar-header {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* List Styling */
+.navbar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centering the items */
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+/* List Item Styling */
+.navbar-list li {
+  margin: 0 30px; /* Reduced margin for closer spacing */
+}
+
+.navbar-list li a {
+  color: #0a5ba6;
+  font-weight: normal;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar-list li a:hover {
+  text-decoration: underline;
+}
+
+
+/* This-section styling */
+
+.this-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: flex-start;
+  margin-left: 40px;
+  text-align: left; /* Ensure text aligns left */
 }
 
 .right-image {
-    position: absolute;
-    right: 20px; /* Adjust positioning as needed */
+  margin-left: 20px; /* Space between the content and the image */
+  height: auto; /* Keep the aspect ratio */
+  max-width: 35%; /* Adjust width based on layout */
 }
 
-.right-image:first-of-type {
-    right: 140px; /* Adjust positioning for the first right image */
+.toggle-menu {
+  margin-bottom: 10px;
 }
 
+.toggle-menu h2 {
+  margin-left: 40px;
+  font-size: 60px;
+}
+
+.toggle-menu a:hover {
+  color: #0a5ba6 !important;
+}
+
+/* Card Styles */
+
+
+
+.card {
+  margin-right: 20px; /* Add space between card and image */
+  width: 400px; /* Maintain card width */
+}
+
+
+/* Hide card content on small screens */
+.card.hidden {
+  max-height: 0;
+  padding: 0; /* Collapse padding */
+}
+
+/* Header Styles */
+.card-header {
+  background-color: #0f2c52; /* Blue background */
+  color: white;
+  padding: 15px;
+  margin: 0;
+  width: 100%; /* Make background cover full width */
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* Title and Button Styling */
+.card-title {
+  flex: 1;
+}
+
+/* Toggle button styling */
+.toggle-button {
+  display: none; /* Hidden by default */
+  padding: 10px 20px;
+  background-color: #0a5ba6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* Show the toggle button on small screens */
+@media (max-width: 768px) {
+  .card-header .card-title {
+    display: none; /* Hide title on small screens */
+  }
+
+  .toggle-button {
+    display: inline-block; /* Show button on small screens */
+  }
+
+  /* Ensure card content is hidden initially on small screens */
+  .card.hidden {
+    max-height: 0;
+    padding: 0; /* Collapse padding */
+  }
+}
+
+/* List Styles */
+.card-list {
+  list-style-type: none;
+  padding: 0 7px;
+  margin: 10px 0;
+}
+
+.card-list li {
+  margin: 10px 0;
+  font-size: 18px;
+  position: relative; /* Positioning context for toggle icon */
+  padding-left: 30px; /* Space for toggle icon */
+  cursor: pointer;
+}
+
+/* Highlighted item with yellow underline */
+.highlighted-item-home {
+  background-color: rgb(237, 184, 10); /* Yellow background */
+  width: 100%;
+  font-weight: bold;
+  margin-left: -5px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Exclude "Home" from hover effect */
+.card-list li:first-child {
+  background-color: transparent; /* No background color for "Home" */
+  color: inherit; /* Keep original text color */
+}
+
+/* Main list hover effect */
+.card-list li:not(:first-child):hover {
+  text-decoration: underline;
+  color: #0a5ba6;
+  transition: color 0.3s ease;
+}
+
+/* Toggle Icon Styles */
+.toggle-icon {
+  position: absolute;
+  left: 0; /* Align icon to the left edge */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px; /* Adjust icon size */
+  line-height: 1.6; /* Ensure icon aligns with text */
+}
+
+/* Sublist Styles */
+.sub-list {
+  list-style-type: none;
+  padding-left: 20px;
+  display: none; /* Hide sublists by default */
+}
+
+/* Ensure sub-lists are not affected by main list hover */
+.sub-list li {
+  font-size: 16px;
+  margin: 5px 0;
+  cursor: pointer;
+  text-decoration: none; /* No underline effect */
+}
+
+/* Sublist hover effect (without underline) */
+.sub-list li:hover {
+  color: #0a5ba6;
+  transition: color 0.3s ease;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .undergrad-navbar {
+    height: auto;
+    padding: 10px;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-list li {
+    margin: 5px 0;
+  }
+
+  .navbar-header {
+    font-size: 22px;
+  }
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack columns on smaller screens */
+    gap: 20px; /* Reduce space between stacked columns */
+    padding: 0 10px; /* Adjust padding to prevent overflow */
+  }
+
+  .footer-column {
+    max-width: 100%; /* Allow columns to take full width */
+    text-align: center; /* Center align text on smaller screens */
+  }
+
+  .footer-heading {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-list {
+    padding-left: 0; /* Remove padding for list items */
+  }
+
+  .footer-list li {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .footer-text {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .comment-container {
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items */
+  }
+
+  .comment-image img {
+    width: 100px; /* Reduce image size on smaller screens */
+    height: 100px;
+  }
+
+  .comment-content {
+    text-align: center; /* Center the text for smaller screens */
+  }
+
+  .director-name {
+    font-size: 18px; /* Reduce font size for name */
+  }
+
+  .director-job, .director-comment {
+    font-size: 14px; /* Reduce font size for job title and comment */
+  }
+
+  .director-comment {
+    padding: 0 20px; /* Add some padding for readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .comment-image img {
+    width: 80px; /* Further reduce image size on very small screens */
+    height: 80px;
+  }
+
+  .director-name {
+    font-size: 16px; /* Further reduce font size */
+  }
+
+  .director-job, .director-comment {
+    font-size: 13px; /* Further reduce font size */
+  }
+
+  .director-comment {
+    padding: 0 10px; /* Add smaller padding for very small screens */
+  }
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .programs-container {
+    flex-direction: column; /* Stack the cards on smaller screens*/
+    align-items: center;
+  }
+}
+
+
+
+
+/* Media Queries for Responsiveness */
+
+/* For medium screens */
+@media (max-width: 1024px) {
+  .background-section {
+    height: 80vh; /* Reduce height for medium screens */
+  }
+  .text-container {
+    margin-top: -20%; /* Adjust text margin */
+  }
+}
+
+/* For small screens */
+@media (max-width: 768px) {
+  .background-section {
+    height: 70vh; /* Adjust section height for smaller screens */
+  }
+
+  .text-container {
+    margin-top: -15%; /* Adjust margin for smaller screens */
+  }
+
+  .text-h4 {
+    font-size: 20px;
+  }
+
+  .text-h3 {
+    font-size: 28px;
+  }
+
+  .text-p {
+    font-size: 16px;
+  }
+
+  .overlay {
+    padding: 0 20px;
+  }
+  
+  .button-container {
+    flex-direction: column;
+    gap: 15px; /* Add gap between buttons */
+  }
+}
+
+/* For extra small screens */
+@media (max-width: 480px) {
+  .background-section {
+    height: 60vh; /* Further reduce section height */
+  }
+
+  .text-container {
+    margin-top: -10%; /* Reduce margin even more */
+  }
+
+  .text-h4 {
+    font-size: 18px;
+  }
+
+  .text-h3 {
+    font-size: 24px;
+  }
+
+  .text-p {
+    font-size: 14px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+
+
+
+
+
+/* Media query for smaller viewports */
+@media (max-width: 768px) {
+    .history-card {
+        flex-direction: column; /* Stack the cards vertically on smaller screens */
+        gap: 20px; /* Reduce gap between cards on smaller screens */
+    }
+
+    .history-card .card1, .history-card .card2 {
+        width: 100%; /* Full width for each card */
+        max-width: 100%; /* Prevent cards from exceeding the width of the container */
+    }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .transform-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+  }
+
+  .text-content p {
+    font-size: 1rem;
+  }
+
+  .image-content h3 {
+    font-size: 1.25rem;
+  }
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .event-card {
+    gap: 20px; /* Reduce gap for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column; /* Stack blocks vertically on smaller screens */
+    align-items: center;
+  }
+
+  .event-block {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .custom-card {
+        float: none;
+        width: 100%;                /* Ensures the card takes full width on small screens */
+        margin: 0 auto;             /* Centers the card */
+    }
+
+    .custom-card h2 {
+        font-size: 1.2rem;          /* Reduce font size for smaller screens */
+    }
+
+    .custom-card .row div {
+        font-size: 1rem;            /* Reduce text size for smaller screens */
+    }
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .event-card {
+    justify-content: center;         /* Center the blocks on medium screens */
+    gap: 20px;                       /* Reduce the gap for medium screens */
+    padding: 0 10px;                 /* Further reduce padding on medium screens */
+  }
+
+  .event-block {
+    width: calc(50% - 20px);         /* Adjust the width slightly for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .event-card {
+    flex-direction: column;          /* Stack blocks on top of each other */
+    align-items: center;
+    padding: 0 15px;                 /* Ensure minimal padding on smaller screens */
+  }
+
+  .event-block {
+    width: 70%;                     /* Full width on smaller screens */
+  }
+}
+
+
+
+/* Animation for the Header Box */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Hide the box and display only text for small screens */
+@media (max-width: 768px) {
+    .highlight-header {
+        background-color: transparent; /* Hide background on smaller screens */
+        color: orange; /* Text color for smaller screens */
+        padding: 10px;
+        text-align: center;
+    }
+
+    .highlight-header::before {
+        content: "";
+        display: none; /* Hide the background box */
+    }
+
+    #highlightText {
+        display: block; /* Show only the text */
+    }
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller devices */
+@media (max-width: 768px) {
+    .highlight-item {
+        padding: 15px; /* Adjusted padding */
+    }
+
+    .highlight-title {
+        font-size: 24px; /* Reduced font size */
+    }
+
+    .highlight-item p {
+        font-size: 18px; /* Adjusted font size */
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+    .program-highlights {
+        padding: 0 10px; /* Reduced padding for mobile */
+    }
+
+    .highlight-item {
+        padding: 15px; /* Adjusted padding */
+        margin-bottom: 15px; /* Reduced bottom margin */
+    }
+
+    .highlight-title {
+        font-size: 20px; /* Further reduced font size */
+        padding-bottom: 8px; /* Reduced padding bottom */
+    }
+
+    .highlight-item p {
+        font-size: 16px; /* Further reduced font size */
+    }
+}
+
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 992px) {
+    .container-contact,
+    .request-info {
+        max-width: 100%; /* Allow full width on smaller screens */
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .request-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    .container-contact h2 {
+        font-size: 35px; /* Adjust font size for smaller screens */
+    }
+
+    .container-contact p,
+    .container-contact h3 {
+        text-align: left; /* Ensure text aligns left */
+    }
+
+    .request-info {
+        margin-top: 20px;
+        padding: 15px;
+    }
+}
+
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .request-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .container-contact, .request-info {
+        max-width: 100%;
+    }
+
+    .container-contact h2, .container-contact h3, .container-contact p {
+        text-align: center;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .img-1, .img-2 {
+        width: 80%; /* Adjust width for medium screens and up */
+    }
+}
+
+@media (max-width: 768px) {
+    .content-section .row {
+        flex-direction: column; /* Stack columns vertically on smaller screens */
+    }
+
+    .img-1, .img-2 {
+        margin-bottom: 20px; /* Add spacing between image and text on small screens */
+    }
+}
+
+
+
+
+/* Media Query for Larger Screens */
+@media (min-width: 768px) {
+    .video-text-section {
+        height: 50vh;
+    }
+
+    .video-text-section iframe {
+        height: 80%; /* Maintain height proportionally */
+        width: 90%;
+    }
+
+    .video-text-section .text-content {
+        text-align: left;
+    }
+
+    .video-text-section h1 {
+        
+.content-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.content-section p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+        font-size: 2.5rem;
+    }
+
+    .video-text-section p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 767px) {
+    .video-text-section {
+        height: auto; /* Allow the height to adjust naturally */
+    }
+
+    .video-text-section iframe {
+        height: 60vh; /* Better fit for smaller screens */
+        width: 100%; /* Take full width */
+        margin-top: 20px;
+    }
+
+    .video-text-section h1 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .video-text-section p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Media Queries for smaller screens */
+@media (max-width: 768px) {
+    .faith-container {
+        flex-direction: column; /* Stack elements vertically */
+    }
+
+    .faith-video, .faith-content {
+        flex: 1 1 100%; /* Full width on smaller screens */
+        margin-bottom: 20px; /* Add spacing between stacked items */
+    }
+
+    .faith-content img {
+        height: 120px; /* Adjust image height */
+    }
+}
+
+
+
+/* Media queries for smaller viewports */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .text-image-section {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .text-content,
+    .image-content {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .text-content {
+        margin-bottom: 20px;
+    }
+
+    .content h1 {
+        font-size: 1.5rem;
+    }
+
+    .content p {
+        font-size: 1rem;
+    }
+}
+/* Give Button*/
+  .btn-signup-up {
+    background-color: #0d6efd; /* default blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px;
+    font-weight: bolder;
+    font-size: larger;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* smooth transition */
+  }
+
+  .btn-signup-up:hover {
+    background-color: #0b5ed7; /* slightly darker blue on hover */
+  }
+  
+
+  /* ways to give section*/
+
+  .nav-link {
+    text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #0d6efd; /* turns blue on hover */
+  text-decoration: underline;
+}
+ .nav-link {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+.navbar-nav {
+  padding-left: 0; /* remove default padding */
+}
+
+.nav-link {
+  font-weight: bold;
+  font-size: 18px;
+  padding-left: 0; /* ensures links start at very left */
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    gap: 1rem; /* adds consistent spacing between items on large screens */
+  }
+}
+
+/*Give Section*/
+
+.btn-signup-up {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  position: relative;
+  display: inline-block;
+  width: 150px;
+  text-align: center;
+}
+
+
+.btn-signup-up::after {
+  
+  transition: margin-left 0.25s ease;
+}
+
+.btn-signup-up:hover {
+  background-color: #0b5ed7;
+
+}
+
+.btn-signup-up:hover::after {
+  margin-left: 5px; /* makes the arrow slide slightly */
+}
+
+/* Schedule meeting */
+
+/* Reuse your button style */
+.btn-signup-up {
+  background-color: #0d6efd;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.25s ease, transform 0.25s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-signup-up:hover {
+  background-color: #0b5ed7;
+  text-decoration: none;
+}
+
+/* Card adjustments */
+.schedule-card {
+  background-color: #992323;
+  min-height: 250px; /* taller cards */
+  padding: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsive spacing fix */
+@media (max-width: 768px) {
+  .schedule-card {
+    min-height: 300px;
+    margin-bottom: 15px;
+  }
+}
 
 
 

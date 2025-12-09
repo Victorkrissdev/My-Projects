@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Media/GG_New_logo-removebg-preview.png" type="image/x-icon">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css"/>
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfOdUQqAAAAADr9JQBSka9oQsx2zOGhhDZ9HL_O"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <!-- Bootstrap CSS (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+
+  <section class="navbar-section">
+ <nav class="navbar navbar-expand-lg" style="background-color: #0d6efd;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="Logo.jpg" alt="Logo" class="navbar-logo">
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="meetings.html">Meetings</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</section>
+
+
+
+  <style>
+/* Adjust logo size inside navbar */
+.navbar-logo {
+  height: 40px;         /* adjust as needed */
+  width: auto;          /* keeps proportions */
+  border-radius: 50%;   /* optional: smooth corners */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: #fff !important;   /* bright green text */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect for nav links */
+.navbar-nav .nav-link:hover {
+  color: #fff !important;       /* turns white on hover */
+}
+
+/* Optional: toggle icon color fix for blue background */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,0.9%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+</style>
+
+<style> 
+/* Footer Section */
+.footer {
+  padding: 40px 20px;
+  background-color: #123563;
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  justify-content: center; /* Center columns horizontally */
+  gap: 130px; /* Space between columns */
+  flex-wrap: wrap; /* Wrap columns on smaller screens */
+}
+
+/* Footer Column */
+.footer-column {
+  flex: 1;
+  max-width: 300px; /* Max width for each column */
+  text-align: left;
+}
+
+/* Header Style */
+.footer-heading {
+  font-size: 20px;
+  color: #0a5ba6;
+  margin-bottom: 15px;
+}
+
+/* List Style */
+.footer-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.footer-list li {
+  font-size: 15.8px;
+  color: #fffc;
+  margin-bottom: 10px;
+}
+
+/* Text Styling */
+.footer-text {
+  line-height: 25px;
+  font-size: 18px;
+  color: #fffc;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 24px;
+  background-color: #ddd; /* Placeholder for icon styling */
+  border-radius: 50%;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Footer Button */
+.footer-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fffc;
+  background-color: #0a5ba6;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.footer-button:hover {
+  background-color: transparent;
+  color: #ffc600;
+}
+
+
+/* Blue Section */
+.blue-section {
+  background-color: #0b2648; /* Blue background */
+  height: 40vh; /* 20% of viewport height */
+  display: flex;
+  flex-direction: column; /* Stack paragraphs vertically */
+  justify-content: center; /* Center content vertically */
+  text-align: left; /* Align text to the left */
+  padding: 20px 20px 20px 100px; /* Padding with 100px on the left */
+  color: #fffc; /* White text color */
+  margin: 0; /* Remove margin to avoid the white border */
+  box-sizing: border-box; 
+  font-family: var(gotham, sans-serif);
+}
+
+.blue-section p {
+  margin: 10px 0; /* Space between paragraphs */
+  font-size: 16px; /* Adjust font size as needed */
+  max-width: 100%; /* Ensure paragraph wrapping correctly */
+}
+
+
+
+/* About Hero Section */
+.about-hero {
+  height: 40vh; /* covers 70% of screen height */
+  background: url(Line\ Background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  position: relative;
+}
+
+/* optional dark overlay for readability */
+.about-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+/* Mission Section */
+.mission-section {
+  background-color: #e8e3d6; /* soft neutral tone – change as you like */
+  padding: 5rem 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30vh;
+  position: relative;
+}
+
+.mission-text {
+  text-align: left;
+  max-width: 800px;
+}
+
+.mission-text h2 {
+  text-align: left;
+  margin-left: -40px;
+  font-size: 5rem;
+  font-weight: 540;
+  letter-spacing: 1px;
+  color: #222;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 1rem;
+}
+
+.mission-text p {
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: #444;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  margin-right: -40px;
+  text-align: right;
+  margin-top: 3rem;
+}
+
+/* ✅ Responsive adjustments */
+@media (max-width: 768px) {
+  .mission-section {
+    padding: 3rem 5%;
+  }
+
+  .mission-text h2 {
+    margin-left: 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .mission-text p {
+    margin-right: 0;
+    font-size: 1.3rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-section {
+    padding: 2.5rem 6%;
+  }
+
+  .mission-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .mission-text p {
+    font-size: 1.1rem;
+  }
+}
+
+
+/* About Section */
+/* About Section */
+.about-section {
+  margin-top: 50px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 70vh;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  padding: 0 4%; /* adds side breathing room for the whole section */
+  box-sizing: border-box;
+}
+
+/* Text Side */
+.about-content {
+  flex: 1;
+  padding: 5rem 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* ensures all text starts from left */
+}
+
+.about-content h2,
+.about-content h3,
+.about-content p {
+  text-align: left; /* forces all headings and paragraphs left */
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-section {
+    flex-direction: column;
+  }
+
+  .about-image {
+    width: 100%;
+    height: 200px; /* adjust as needed */
+  }
+
+  .about-content {
+    padding: 3rem 5%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content {
+    padding: 2rem 4%;
+  }
+
+  .about-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-content h3 {
+    font-size: 1.4rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Timeline Section */
+.timeline-section {
+  padding: 5rem 10%;
+  background-color: #f5f5f5;
+  position: relative;
+}
+
+.timeline-header {
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+  text-align: start;
+}
+
+/* Timeline container */
+.timeline {
+  position: relative;
+  padding-left: 30px;
+  border-left: 3px dashed #0d6efd; /* dashed line */
+}
+
+/* Each timeline card */
+.timeline-card {
+  position: relative;
+  margin-top: 20px; /* spacing between cards */
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideIn 0.6s forwards;
+}
+
+/* Stagger animation for each card */
+.timeline-card:nth-child(1) { animation-delay: 0.2s; }
+.timeline-card:nth-child(2) { animation-delay: 0.4s; }
+.timeline-card:nth-child(3) { animation-delay: 0.6s; }
+.timeline-card:nth-child(4) { animation-delay: 0.8s; }
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  left: -12px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #0d6efd;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+
+/* Card content styling */
+.card-content {
+  background-color: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Animation */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 15px;
+  }
+
+  .timeline-card::before {
+    left: -10px;
+  }
+}
+
+
+
+
+</style>
+
+<!-- About page -->
+<section class="about-hero">
+  <div class="about-hero-content">
+    <h1>About Us</h1>
+  </div>
+</section>
+
+<section class="mission-section">
+  <div class="mission-text">
+    <h2 >Bethel's Mission is Revival</h2>
+    <p>—The Personal, Regional, and Global Expansion<br>
+      Of God's Kingdom Through His Manifest Presence
+    </p>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-image"></div>
+  <img style="height: 300px;" src="pray .jpg" alt="">
+  <div class="about-content">
+    <h2>About</h2>
+    <h3>Who We Are</h3>
+    <p>
+      Bethel is a congregation rooted in the love of God and dedicated to worldwide transformation 
+      through revival. The Lord has given us a mandate to be a resource center to impact cities 
+      and nations. We believe we're on the edge of the greatest revival of all time.
+    </p>
+    <p>
+      We are a vibrant family of hope-filled believers who deeply experience the love and presence 
+      of God and partner with Jesus to express the joy and power of His kingdom in every area of life. 
+      At the center of our gatherings is a pursuit of God's presence, where our hearts are transformed 
+      and launched into our destinies. We are excited to run with you and pursue God's presence until 
+      the earth looks like heaven.
+    </p>
+    <p>
+      We welcome you to join us in this adventure!
+    </p>
+  </div>
+</section>
+
+
+
+<section class="timeline-section">
+  <div class="container">
+    <p style="font-size: 30px;">History</p>
+    <h2 class="timeline-header">Our Key Events</h2>
+    <div class="timeline">
+
+      <!-- Card 1 -->
+      <div class="timeline-card">
+        <div class="card-content">
+          <h3>Event One</h3>
+          <p>Description for event one.</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="timeline-card">
+        <div class="card-content">
+          <h3>Event Two</h3>
+          <p>Description for event two.</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="timeline-card">
+        <div class="card-content">
+          <h3>Event Three</h3>
+          <p>Description for event three.</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="timeline-card">
+        <div class="card-content">
+          <h3>Event Four</h3>
+          <p>Description for event four.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- First Column: Information For -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Information for</h3>
+      <ul class="footer-list">
+        <li>Prospective Students</li>
+        <li>Current Students</li>
+        <li>Alumni</li>
+        <li>Parents & Families</li>
+        <li>Faculty & Staff</li>
+        <li>Churches</li>
+        <li>Military</li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-middle">
+  <h3 style="font-size: 30px; color: #fffc; margin-left: 20px;" class="footer-heading">Contact</h3>
+  <div class="footer-text">
+    <p>3900 Bethel Drive<br>St. Paul, MN 55112<br> <i class="bi bi-geo-alt-fill"></i> Maps & Directions</p>
+    <p>651.638.6400</p>
+  </div>
+  <div class="social-icons">
+    <!-- Social Media Icons -->
+    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+    <!-- Add more social icons as needed -->
+  </div>
+</div>
+
+
+    <!-- Last Column: Resources -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Resources</h3>
+      <ul class="footer-list">
+        <li>Jobs at Bethel</li>
+        <li>Calendar</li>
+        <li>Library</li>
+        <li>Questions & Comments</li>
+        <li>Title IX Concerns</li>
+        <li>Course Catalogs</li>
+      </ul>
+      <a style="margin-top: 1px;" href="#" class="footer-button">Support Us</a>
+    </div>
+  </div>
+</footer>
+
+
+<section class="blue-section">
+  <p>© 2024 Bethel University | CA Student Disclosures | Privacy Policy</p>
+  <p>The official policy and commitment of Bethel University is not to discriminate on the basis of race, color, national or ethnic origin, age, gender, or disability in  <br>its educational programs, admissions, or employment practices.</p>
+</section>
+
+
+
+
+
+
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css"> <!-- custom CSS last -->
+
+
+</body>
+</html>

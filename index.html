@@ -2,83 +2,106 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/GG_New_logo-removebg-preview.png" type="image/x-icon">
-    <title>Grow and Glow</title>
+    <link rel="icon" href="Media/GG_New_logo-removebg-preview.png" type="image/x-icon">
+    <title>Register</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css"/>
     <link rel="stylesheet" href="script.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfOdUQqAAAAADr9JQBSka9oQsx2zOGhhDZ9HL_O"></script>
+     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+     <!-- Bootstrap CSS (in <head>) -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-custom">
-        <a class="navbar-brand" href="#">
-            <img src="images/GG_New_logo-removebg-preview.png" height="50" width="50" alt="Logo">
-        </a>
-        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Programs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Get Involve</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-            </form>
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-youtube"></i>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link social-icon" href="#">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <a class="navbar-brand" href="index.html">
+        <img src= "Media/GG_New_logo-removebg-preview.png"  height="50" width="50" alt="Logo">
+    </a>
+    <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+          
+            <li class="nav-item">
+                <a class="nav-link" href="#">Programs and Events</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="give.html">Give</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
+
+       <style>
+  /* Style for the search input placeholder */
+  .form-control::placeholder {
+    color: white; /* Set placeholder text color to white */
+  }
+
+  /* Style for the clear button in IE and Edge */
+  .form-control::-ms-clear {
+    display: none; /* Hide the clear button */
+  }
+
+  /* Style for the clear button in other browsers */
+  .form-control::-webkit-search-clear-button {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    color: white; /* Set clear button color to white */
+  }
+</style>
+
+<div style="margin-right: 200px;" class="d-flex align-items-center">
+  <!-- Search Input and Button -->
+  <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search" style="width: 200px; height: 38px; background-color: transparent !important; color: white; border: 1px solid white;">
+  <button class="btn btn-outline-light d-flex align-items-center justify-content-center" type="submit" style="height: 38px; padding: 0 15px;">
+    Search
+  </button>
+
+  <div class="container text-center"></div>
+        <a href="register.html" class="btn btn-signup-up">Register</a>
+    </div>
+</div>
+
+
+        
+
+
+        
+    </div>
+
+    
+</nav>
+    <div class="breaking-news">
+    <div class="news-label">
+        <span>RECENT NEWS</span>
+    </div>
+    <div class="news-marquee">
+        <marquee>Latest updates: Our upcoming event is packed with exciting sessions, inspirational speakers, and much more! Stay tuned for more details.</marquee>
+    </div>
+</div>
+
+
 
     <section class="hero-section">
         <div class="hero-content">
@@ -96,27 +119,451 @@
         <p>Our mission is to nurture children to shine brightly and grow into their best selves. Join us in cultivating a generation of confident, compassionate, and capable individuals. Join us on this transformative journey as we empower young minds to reach their full potential.</p>
     </div>
     <div class="image-content">
-        <img src="images/img back.jpg" alt="Descriptive Image">
+        <img src="Media/img back.jpg" alt="Descriptive Image">
     </div>
   </section>
 
-
-  <section class="new-section">
-    <div class="content">
-        <h1>Shaping Future Leaders for a Brighter Tomorrow</h1>
-        <p>Empowering children to grow in wisdom, strength, and character through our programs and  <br>community support.</p>
+  <section class="video-text-section">
+    <div class="container-fluid h-100">
+        <div class="row h-100">
+            <!-- Video Section -->
+            <div class="col-md-6 p-0 d-flex justify-content-center align-items-center">
+                <iframe src="https://www.youtube.com/embed/9y3nbosTpEM" 
+                        title="YouTube video" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                </iframe>
+            </div>
+            <!-- Text Section -->
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-start text-white text-content p-4">
+                <h1>Empowering Young Minds for a Brighter Future.</h1>
+                <p style="color: #fff;">Through our programs, we inspire children to discover their unique gifts and talents. Join us in creating an environment where every child is encouraged to grow, learn, and shine. </p>
+            </div>
+        </div>
     </div>
-    <div class="images">
-        <img src="images/left-image.jpg" alt="Left Image" class="left-image">
-        <img src="images/right-image1.jpg" alt="Right Image 1" class="right-image">
-        <img src="images/right-image2.jpg" alt="Right Image 2" class="right-image">
+</section>
+
+
+    <section class="content-section py-5">
+  <div class="container">
+    <div class="row">
+      <!-- Logo Column (Left) -->
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img src="Media/GG_New_logo-removebg-preview.png" alt="Your Logo" class="img-1">
+      </div>
+      <!-- First Column (Text) -->
+      <div class="col-md-4">
+        <h1>Welcome to Our Platform</h1>
+        <p>Are you looking for a place to hold your next family reunion, baby shower, church gathering, or committee meeting? The Christian Center has a room available to rent that may be perfect for your event.</p>
+      </div>
+      <!-- Second Column (Text) -->
+      <div class="col-md-4">
+        <h1>Empowering Your Journey</h1>
+        <p>Phone: 309-685-4218<br>
+Fax: 309-687-2704<br>
+Bowling Center: 309-685-4217 ext. 107<br>
+Athletic Hotline: 309-685-4218 (when the operator answers, press 4)<br><br>
+
+Office Hours:<br>
+Monday – Friday 8:00am – 4:30pm<br>
+Offices are closed Saturday & Sunday.</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <!-- Third Column (Text) -->
+      <div class="col-md-4">
+        <h1>Innovative Solutions</h1>
+        <p>The Christian Center began its ministry on July 1, 1948, under the direction of founder Dan Demmin in an old house located at the corner of Perry and Hamilton in downtown Peoria, IL.</p>
+      </div>
+      <!-- Fourth Column (Text) -->
+      <div class="col-md-4">
+        <h1>Join Our Community</h1>
+        <p>If you would prefer to register your child for one of our teams in person, you can visit our office during regular business hours.</p>
+      </div>
+      <!-- Logo Column (Right) -->
+      <div class="col-md-4 d-flex justify-content-center align-items-center">
+        <img src="Media/GG_New_logo-removebg-preview.png" alt="Your Logo" class="img-2">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+        <section class="request-section">
+    <div class="request-container">
+        <div class="container-contact">
+            <h3>Contact Us</h3>
+            <h2>Request Information</h2>
+            <p>Interested in learning more about Bethel's Children’s, Youth, and Family Ministry program? Fill out this simple form and we'll send you more information soon.</p>
+        </div>
+
+        <div class="request-info">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                    <label for="emailAddress">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" placeholder="Email Address">
+                </div>
+                <div class="form-group">
+                    <label for="comments">Additional Questions or Comments</label>
+                    <textarea class="form-control" id="comments" rows="4" placeholder="Your comments..."></textarea>
+                </div>
+                <button type="submit" style="background-color: #1e5897; color: white; border-radius: 3px; border: none;">Submit Request <a href="#" style="font-size: 20px; color: #fff;"> </a></button>
+            </form>
+            <div class="privacy-terms">
+                By submitting, you agree to our <a href="#">Privacy Policy</a> and <a href="#">Terms of Service</a>.
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="ceo-section py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Media/CEO new.jpg" alt="CEO Image" class="img-fluid rounded">
+            </div>
+            <div class="col-md-6">
+                <h4>Meet Our Counsellor</h4>
+                <h3><strong>Victor Ekwemalor</strong></h3>
+                <p>
+                    Victor Ekwemalor is the visionary leader behind Glow and Grow, a dedicated professional with a passion for inspiring the younger generation to reach their full potential. They are known as the leaders of the generation.
+                </p>
+                <a href="contact_page_url" class="btn btn-primary-b">Get in Touch</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="program-highlights py-5">
+    <div class="container">
+        <div class="highlight-header" id="highlightHeader" data-hide="true">
+            <h2 id="highlightText">Program Highlights</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6 highlight-item">
+                <h3 class="highlight-title">A pioneer in children’s <br> and family ministry</h3>
+                <p>You’ll develop lifelong connections with a cohort of peers who share your passion to serve children, youth, and families.</p>
+            </div>
+            <div class="col-md-6 highlight-item">
+                <h3 class="highlight-title">Peer support</h3>
+                <p>When you graduate, you’ll become part of our supportive network of alumni who will journey with you throughout your career.</p>
+            </div>
+            <div class="col-md-6 highlight-item">
+                <h3 class="highlight-title">Practical application</h3>
+                <p>You’ll develop lifelong connections with a cohort of peers who share your passion to serve children, youth, and families.</p>
+            </div>
+            <div class="col-md-6 highlight-item">
+                <h3 class="highlight-title">Intercultural and <br> multi-denominational</h3>
+                <p>You’ll develop lifelong connections with a cohort of peers who share your passion to serve children, youth, and families.</p>
+            </div>
+        </div>
     </div>
 </section>
 
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<section style="height: 35vh;" class="container mt-5">
+  <div class="custom-card">
+    <h2>At a Glance</h2>
+    <div class="content">
+      <div class="row mb-2">
+        <div class="col-6 text-left">
+          Delivery 
+        </div>
+        <div class="col-6 text-right">
+          Online
+        </div>
+      </div>
+      <div class="row mb-2">
+        <div class="col-6 text-left">
+          Finish in as few as
+        </div>
+        <div class="col-6 text-right">
+          2 years
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 text-left">
+          Estimated tuition
+        </div>
+        <div class="col-6 text-right">
+          $19,450
+        </div>
+      </div>
+      <p class="learn"> <a href="#">Learn more about the cost of attendance.</a> </p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="event-section">
+  <div class="event-card">
+    <div class="event-block">
+      <h3>Upcoming Events</h3>
+      <div class="event-img">
+        <img src="Media/conf2.png" height="350" width="500" alt="Event Image">
+      </div>
+      <div class="event-content">  
+        <p>
+          Our upcoming event is packed with exciting sessions, inspirational
+           speakers, and much more! Stay tuned for more details.
+        </p>
+         <button type="submit" style="background-color: #1e5897; color: white; border-radius: 3px; border: none;">See all Events</button>
+      </div>
+    </div>
+
+    <div class="event-block">
+      <h3>Recent News </h3>
+      <div class="event-img">
+        <img src="Media/conf2.png" height="300" width="450" alt="Event Image">
+      </div>
+      <div class="event-content">
+        <p>
+          Join us for a transformative experience at the Grow and Glow Empowering  Young Minds' event. This session will feature engaging workshops, interactive activities.
+        </p>
+         <button type="submit" style="background-color: #1e5897; color: white; border-radius: 3px; border: none;">Learn More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="transform-section">
+  <div class="container">
+    <div class="transform-content">
+      <div class="image-content">
+        <h3>Transformation starts here.</h3>
+        <img src="Media/work1.jpg" alt="Transformation Image">
+      </div>
+      <div class="text-content">
+        <p>
+          At Bethel Seminary, you’ll experience personal and spiritual transformation that will equip you to transform others—for eternal impact. Our M.A. in Children’s, Youth, and Family Ministry program develops your head, heart, and hands with a foundation.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>   
+
+
+
+<div class="history-section">
+    <div class="history-card">
+        <div class="card1">
+            <h3 style="margin-left: 50px; font-size: 64px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(10, 84, 188);">7</h3>
+            <p style="font-size: 23px; margin-left: 50px;">full-time faculty</p>
+        </div>
+        <div class="card2">
+            <h3 style="margin-left: 50px; font-size: 64px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; color: rgb(10, 84, 188); margin-top: 10px; font-weight: 300;">1989</h3>
+            <p style="font-size: 23px; margin-left: 50px;">Bethel launches non-theological graduate <br> programs</p>
+        </div>
+    </div>
+</div>
+
+
+<section class="comment-section"></section>
+  <div class="comment-container">
+    <!-- Director's Image -->
+    <div class="comment-image">
+      <img src="Media/teacher.jpg" alt="Lorraine Carroll" />
+    </div>
+
+    <!-- Comment Content -->
+    <div class="comment-content">
+      <h3 style="font-size: 25px;" class="director-name">Lorraine Carroll '14</h3>
+      <p style="font-size: 20px;" class="director-job">Director of iAm Children's Ministries community program</p>
+      <p style="font-size: 18px;" class="director-comment">
+        "Bethel Seminary was a life-changing experience, and it provided a safe and challenging community environment. Bethel affirmed my strengths, helped to identify my weaknesses, and enhanced my effectiveness as a teacher, leader, and a follower of Christ."
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="info-section">
+  <div class="container-info">
+    <h3 style="color: rgb(10, 91, 166); font-family: new;" class="header">Career Outcomes</h3>
+    <p style="font-size: 40px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; line-height: normal;" class="paragraph">Wondering what you can do with a Children's, Youth, and Family Ministry degree?.</p>
+    <p style="font-size: 20px;" class="paragraph">Our online master's degree in children's, youth, and family ministry program will prepare you to invest in the future of the church by serving the church of today—its children!</p>
+
+    <div class="additional-content">
+      <!-- Skills section -->
+      <div class="skills-section">
+        <h4 class="subheader">Skills</h4>
+        <p class="short-text">Learn how to:</p>
+        <ul class="list-items-1">
+          <li>Cultivate a philosophy of ministry to children and families so you can meet real needs with biblical solutions</li>
+          <li>Be a successful member of any ministry team through developing your leadership skills</li>
+          <li>Lead children’s and family ministry in your church, your community, and the global arena by gaining intercultural competence</li>
+          <li>Take practical courses with concepts and strategies you can apply to your current ministry experience</li>
+        </ul>
+      </div>
+      
+      <!-- Career section -->
+      <div class="career-section">
+        <h4 class="subheader">Career</h4>
+        <p class="short-text">Our graduates are prepared for a number of roles, including:</p>
+        <ul class="list-items-2">
+          <li>Children’s pastor</li>
+          <li>Family and Youth Coordinator</li>
+          <li>Children’s, Youth, and Family Minister</li>
+          <li>International children ministry</li>
+          <li>Leadership role in nonprofits serving children and families</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="background-section">
+  <div class="overlay">
+    <div class="text-container">
+      <h4 style="color: rgb(5, 74, 144); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="text-h4">Start your journey</h4>
+      <h3 style="font-size: 70px; color: rgb(55, 53, 53); font-weight: bolder;" class="text-h3">Apply now</h3>
+      <p style="font-size: 20px; color:black " class="text-p">
+        You're called to accomplish incredible things. Take the next step in your career and fill out our simple, straightforward application today.
+      </p>
+      <div class="button-container">
+         <button type="submit" style="background-color: #1e5897; color: white; border-radius: 3px; border: none;">View Project Overview <a href="#" style="font-size: 20px; color: #fff;"> →</a></button>
+        <button type="submit" style="background-color: #1e5897; color: white; border-radius: 3px; border: none;">See  Ways you Can Support <a href="#" style="font-size: 20px; color: #fff;"> →</a>
+</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="related-programs-section">
+  <h2 style="font-size: 25px; font-weight: 500; color: dimgray;" class="section-title">Explore Related Programs</h2>
+
+  <div class="programs-container">
+    <!-- Card 1 -->
+    <div class="program-card">
+      <h3 style="font-size: 23px; color: #0b5dae ; margin-top: 17px ; margin-left: 20px; font-weight: 500px;" class="program-title">Master of Divinity <br> Program</h3>
+      <p style="font-size: 15px; margin-left: 20px" class="program-description">Master of Divinity</p>
+      <button style="color: black; font-size: 15px; font-weight: 100; background-color: #F9C70C; margin-left: 20px" class="btn btn-learn-more">Learn more</button>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="program-card">
+      <h3 style="font-size: 23px; color: #0b5dae; margin-top: 17px; margin-left: 20px; font-weight: 500;" class="program-title">Biblical Studies <br> Certificate</h3>
+      <p style="font-size: 15px; margin-left: 20px;" class="program-description">Certificate</p>
+      <button style="color: black; font-size: 15px; font-weight: 100; background-color: #F9C70C; margin-left: 17px;" class="btn btn-learn-more">Learn more</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="accreditation-section">
+  <h3 class="section-header">Accreditation</h3>
+
+  <div class="accreditation-container">
+    <!-- First Column: Seminary Accreditation -->
+    <div class="accreditation-item">
+      <h4 class="accreditation-title">Seminary Accreditation</h4>
+      <p class="accreditation-description">
+        Bethel Seminary is accredited by the <a href="https://www.ats.edu" class="accreditation-link">Commission on Accrediting</a> of the Association of Theological Schools in the United States and Canada.
+      </p>
+    </div>
+
+    <!-- Second Column: University Accreditation -->
+    <div class="accreditation-item">
+      <h4 class="accreditation-title">University Accreditation</h4>
+      <p class="accreditation-description">
+        Bethel University has been continuously accredited by the <a href="https://www.hlcommission.org" class="accreditation-link">Higher Learning Commission</a> since 1959. This regional accreditation, recognized by the United States Department of Education, demonstrates that the university meets quality educational standards.
+      </p>
+    </div>  
+  </div>
+</section>
+
+
+
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- First Column: Information For -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Information for</h3>
+      <ul class="footer-list">
+        <li>Prospective Students</li>
+        <li>Current Students</li>
+        <li>Alumni</li>
+        <li>Parents & Families</li>
+        <li>Faculty & Staff</li>
+        <li>Churches</li>
+        <li>Military</li>
+      </ul>
+    </div>
+
+    <div class="footer-column footer-middle">
+  <h3 style="font-size: 30px; color: #fffc; margin-left: 20px;" class="footer-heading">Contact</h3>
+  <div class="footer-text">
+    <p>3900 Bethel Drive<br>St. Paul, MN 55112<br> <i class="bi bi-geo-alt-fill"></i> Maps & Directions</p>
+    <p>651.638.6400</p>
+  </div>
+  <div class="social-icons">
+    <!-- Social Media Icons -->
+    <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-tiktok"></i></a>
+    <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+    <!-- Add more social icons as needed -->
+  </div>
+</div>
+
+
+    <!-- Last Column: Resources -->
+    <div class="footer-column">
+      <h3 style="color: #ffc600;" class="footer-heading">Resources</h3>
+      <ul class="footer-list">
+        <li>Jobs at Bethel</li>
+        <li>Calendar</li>
+        <li>Library</li>
+        <li>Questions & Comments</li>
+        <li>Title IX Concerns</li>
+        <li>Course Catalogs</li>
+      </ul>
+      <a style="margin-top: 1px;" href="#" class="footer-button">Support Us</a>
+    </div>
+  </div>
+</footer>
+
+
+<section class="blue-section">
+  <p>© 2024 Bethel University | CA Student Disclosures | Privacy Policy</p>
+  <p>The official policy and commitment of Bethel University is not to discriminate on the basis of race, color, national or ethnic origin, age, gender, or disability in  <br>its educational programs, admissions, or employment practices.</p>
+</section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+   
+    <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>   
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
